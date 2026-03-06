@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Main container */
+
+.container {
+    width: 900px;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 25px;
+    backdrop-filter: blur(20px);
+
+    box-shadow:
+        0 0 40px rgba(0, 0, 0, 0.5),
+        0 0 80px rgba(0, 255, 200, 0.1);
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+header p {
+    opacity: 0.8;
+}
+
+/* Dashboard layout */
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Input section */
+
+.input-section {
+    flex: 1;
+}
+
+.input-section h2 {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+
+    background: linear-gradient(135deg, #00e6a8, #00c3ff);
+
+    box-shadow: 0 0 20px rgba(0, 255, 200, 0.5);
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 35px rgba(0, 255, 200, 1);
+}
+
+/* Result section */
+
+.result-section {
+    flex: 1;
+    text-align: center;
+}
+
+/* BP Circle meter */
+
+.bp-circle {
+
+    width: 220px;
+    height: 220px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+
+    font-size: 34px;
+    font-weight: bold;
+
+    background: conic-gradient(#00ffb7 0deg, #00ffb7 360deg);
+
+    box-shadow:
+        0 0 40px rgba(0, 255, 200, 0.5),
+        inset 0 0 20px rgba(0, 0, 0, 0.6);
+
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+#bpStatus {
+    margin-top: 25px;
+    font-size: 22px;
+}
+
+/* Status colors */
+
+.normal {
+    color: #00ffb7;
+}
+
+.elevated {
+    color: #ffd166;
+}
+
+.high {
+    color: #ff6b6b;
+}

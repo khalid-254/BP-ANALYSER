@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BP ANALYSER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>🫀 BLOOD PRESSURE ANALYSER</h1>
+            <p>Smart Blood Pressure Analyser</p>
+        </header>
+
+        <div class="dashboard">
+
+            <div class="input-section">
+
+                <h2>Enter Your Weight</h2>
+
+                <input type="number" id="weight" placeholder="Weight (kg)">
+
+                <button onclick="checkBP()">Analyze BP</button>
+
+            </div>
+
+            <div class="result-section">
+
+                <div class="bp-circle">
+
+                    <span id="bpLevel">--</span>
+
+                </div>
+
+                <h2 id="bpStatus">Waiting for input</h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
